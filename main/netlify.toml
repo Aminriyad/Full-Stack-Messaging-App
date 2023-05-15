@@ -1,0 +1,12 @@
+[build]
+  command = "yarn build"
+  functions = "functions"
+  publish = "build"
+
+[build.environment]
+  APP_SPECIFIC_FLAG = "true"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
